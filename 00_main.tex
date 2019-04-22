@@ -10,9 +10,10 @@
 \usepackage{color}
 \usepackage{graphicx}
 \usepackage{microtype}
+\usepackage{tabularx}
 
 \usepackage[brazilian, hyperpageref]{backref}
-\usepackage[alf]{abntex2cite}
+\usepackage[alf,abnt-etal-text=default]{abntex2cite}
 
 \renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
 % Texto padrão antes do número das páginas
@@ -40,7 +41,7 @@
 
 \tipotrabalho{TCC}
 
-\preambulo{Colocar o preambulo aqui}
+% \preambulo{Colocar o preambulo aqui}
 
 \makeatletter
 \hypersetup{
@@ -101,25 +102,25 @@
 \imprimircapa
 
 
-\begin{dedicatoria}
-   \vspace*{\fill}
-   \centering
-   \noindent
-   \textit{ Este trabalho é dedicado às crianças adultas que,\\
-   quando pequenas, sonharam em se tornar cientistas.} \vspace*{\fill}
-\end{dedicatoria}
+% \begin{dedicatoria}
+%   \vspace*{\fill}
+%   \centering
+%   \noindent
+%   \textit{ Este trabalho é dedicado às crianças adultas que,\\
+%   quando pequenas, sonharam em se tornar cientistas.} \vspace*{\fill}
+% \end{dedicatoria}
 
-\input{agradecimentos.tex}
+% \input{agradecimentos.tex}
 
 % ---
 % RESUMOS
 % ---
 
 % resumo em português
-\input{resumo.tex}
+% \input{resumo.tex}
 
 % resumo em inglês
-\input{abstract.tex}
+% \input{abstract.tex}
 
 % ---
 % inserir lista de ilustrações
