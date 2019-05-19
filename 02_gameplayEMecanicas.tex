@@ -1,43 +1,75 @@
 \section{\textit{Gameplay}}
-\begin{enumerate}
-\item Duende
-\end{enumerate}
-\begin{itemize}
-\item Maçã:
-\end{itemize}
-Quando uma maçã é coletada ela pode ficar guardada para um momento de conveniência. Quando acionadende fica invisivel por 5 segundos.
-\begin{itemize}
-\item Banana:
-\end{itemize}
-Segue os mesmos princípios de coleta das maçãs. Quando acionadas causam chuvas que podem ser ácidas, para afastar inimigos, ou férteis fazendo crescer árvores e vegetações usadas em beneficio do jogador, tais como pontes, troncos onde ele pode se esconder, etc.
+
+Durante as três primeiras fases, o jogador é apresentado a um dos personagens em seu ambiente natural, este é o momento para que se aprenda as diversas habilidades dos diferentes personagens.
+
+As habilidade serão apresentadas ao jogador gradualmente, sem que o mesmo fique sobrecarregado de informações, ao mesmo passo que a dificuldade de inimigos também aumentará, objetivando manter o \textit{flow} do jogo.
+
+Ao final das duas primeiras fases, o jogador iniciara uma nova fase com um novo personagem, já no  final da terceira, ele será levado também a uma nova fase, porém agora ele deverá controlar os três personagens de maneira cooperativa, para que unindo suas habilidades únicas progrida no jogo.
+
+
+
 
 \section{Progressão do Jogo}
 
-Descreva como o jogo evolui e o que o jogador precisa fazer para progredir no jogo.
+TODO: Descreva como o jogo evolui e o que o jogador precisa fazer para progredir no jogo.
 
 \section{Estrutura de Missões/Desafios}
 
-Descreva os desafios micros e macros dentro de cada fase do jogo.
+TODO: Descreva os desafios micros e macros dentro de cada fase do jogo.
 
 \section{Objetivos}
 
-Descreva os desafios micros e macros dentro de cada fase do jogo.
+Nas três primeiras fases, os personagens tem por objetivo, achar aquilo que lhes foi roubado, através de dicas que lhes serão dadas pelo caminho.
+
+Na ultima fase, devem sobreviver e utilizar habilidade me conjunto para parar o antagonista, e assim recuperar o que lhes foi tomado.
 
 \section{Mecânicas}
 
-Descreva as regas do jogo (implícitas e explícitas) e como as partes (personagens do jogo) interagem entre si.
+TODO: Descreva as regas do jogo (implícitas e explícitas) e como as partes (personagens do jogo) interagem entre si.
+
+Todos os personagens poderão andar livremente pelo cenário, contudo existem mecânicas específicas de cada um dos personagens que estão detalhadas abaixo:
+
+
+\subsection{Duende}
+\subsubsection{Crescer plantas}
+Segue os mesmos princípios de coleta das maçãs. Quando acionadas causam chuvas que podem ser ácidas, para afastar inimigos, ou férteis fazendo crescer árvores e vegetações usadas em beneficio do jogador, tais como pontes, troncos onde ele pode se esconder, etc.
+\subsubsection{Destruir plantas}
+\subsubsection{Invisibilidade}
+Quando uma maçã é coletada ela pode ficar guardada para um momento de conveniência. Quando acionada fica invisível por 5 segundos.
+
+\subsection{Xamã}
+
+\subsubsection{Curar}
+\subsubsection{Olhos de Águia}
+
+\subsection{Bruxa}
+
 
 \section{Movimentação / Física}
+A movimentação dentro do jogo se dará utilizando as teclas W, A, S, e D do teclado, por ser um padrão já conhecido e utilizado em muitos jogos.
 
-Descreva como funcionará as movimentações dos personagens dentro jogo (as limitações e possibilidades) e como será o sistema de física.
+Com o mouse, o \textit{player} conseguirá rotacionar a camera do jogo, para ter uma melhor visibilidade do cenário, e assim maiores chances de resolver os desafios.
+
+Será utilizado o motor de física fornecido pela própria Unity3D,
+
+Para maiores detalhes consulte a sessão 5.2 - Sistema de Controle deste documento.
 
 \section{Objetos}
 
-Descreva os objetos que existem no jogo e como o jogador interage com eles.
+TODO:
 
 \section{Ações}
 
 Descreva como o jogador interage de forma geral (controles, botões, objetos) com o mundo do jogo.
+
+\subsection{Xamã}
+\begin{itemize}
+\item Caça usando arco e flecha, um instrumento mais avançado em relação à rudimentar lança
+\item Construção de moradias em cavernas, pés e paredes de desfiladeiros
+\item Construção de Kivas, uma sala ampla dentro das cavernas, utilizada principalmente para discussões de teor político e rituais religiosos, mas que também vinha a servir como ponto de encontro; transmissão oral de conhecimentos, sem que muito registro histórico escrito tenha sido deixado para maiores referencias;
+\item Substituição da caça por plantações agrícolas, possibilitando a alimentação de mais aldeões.
+\item Habilidade para criar equipamentos de caça e sobrevivência
+\end{itemize}
 
 \section{Combate}
 
@@ -45,16 +77,18 @@ Descreva como o jogador interage de forma geral (controles, botões, objetos) co
 
 \section{Economia}
 
-Descreva como funciona o sistema financeiro (moedas) e como elas são utilizadas no mundo do jogo.
+Não há economia planejada para o jogo.
 
 \section{Opções do Jogo}
 
-Descreva quais são as modalidades de jogo e como elas afetam/alteram o jogo.
+O jogo contará com variados níveis de dificuldades, que afetarão como a IA inimiga irá se comportar, bem como pontos de vida e ataque
+
+Será possível também ativar e desativar legendas para as partes de histórias e diálogos no jogo, e por fim o jogador poderá selecionar a resolução do jogo que prefere jogar.
 
 \section{Salvar \& Replay}
 
-Descreva o funcionamento do sistema de save ou autosave e se há modo New Game Plus.
+O jogo contém um sistema de auto-salvamento, que será ativado por certas partes chaves do jogo. Além disso será possível salvar pelo menu de pause do jogo, para retornar futuramente no estado em que parou.
 
 \section{Easter Eggs, Cheats, bônus}
 
-Descreva se o jogo possuir conteúdos escondidos, trapaças ou conteúdos extras (roupas, modos, etc.).
+No momento não estão sendo planejados Easter Eggs ou Cheats, contudo durante o jogo alguns objetos coletáveis darão acesso às artes conceituais do jogo.

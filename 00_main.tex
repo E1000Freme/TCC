@@ -1,6 +1,7 @@
 \documentclass[
     12pt,
     a4paper,
+    openany,
     portuguese
 ]{abntex2}
 \usepackage{lmodern}
@@ -47,11 +48,11 @@
 \makeatletter
 \hypersetup{
      	%pagebackref=true,
-		pdftitle={\@title}, 
+		pdftitle={\@title},
 		pdfauthor={\@author},
     	pdfsubject={\imprimirpreambulo},
 	    pdfcreator={LaTeX with abnTeX2},
-		pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico}, 
+		pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico},
 		colorlinks=true,       		% false: boxed links; true: colored links
     	linkcolor=blue,          	% color of internal links
     	citecolor=blue,        		% color of links to bibliography
@@ -76,7 +77,7 @@
 % configurações para atender às regras da ABNT
 \setfloatadjustment{quadro}{\centering}
 \counterwithout{quadro}{chapter}
-\renewcommand{\cftquadroname}{\quadroname\space} 
+\renewcommand{\cftquadroname}{\quadroname\space}
 \renewcommand*{\cftquadroaftersnum}{\hfill--\hfill}
 
 \setfloatlocations{quadro}{hbtp}
@@ -92,13 +93,15 @@
 % ---
 \makeindex
 
+\renewcommand{\thesubsubsection}{\alph{subsubsection}}
+\renewcommand{\thesubsection}{\thesection.\Alph{subsection}}
 
 \begin{document}
 
 \selectlanguage{brazil}
 
 % Retira espaço extra obsoleto entre as frases.
-\frenchspacing 
+\frenchspacing
 
 \imprimircapa
 
@@ -142,25 +145,25 @@
 % ---
 % inserir lista de tabelas
 % ---
-\pdfbookmark[0]{\listtablename}{lot}
-\listoftables*
-\cleardoublepage
+% \pdfbookmark[0]{\listtablename}{lot}
+% \listoftables*
+% \cleardoublepage
 % ---
 
 % ---
 % inserir lista de abreviaturas e siglas
 % ---
-\begin{siglas}
-  \item[Modelo] Fazer
-\end{siglas}
+% \begin{siglas}
+%   \item[Modelo] Fazer
+% \end{siglas}
 % ---
 
 % ---
 % inserir lista de símbolos
 % ---
-\begin{simbolos}
-  \item[$ \Gamma $] Letra grega Gama
-\end{simbolos}
+% \begin{simbolos}
+%   \item[$ \Gamma $] Letra grega Gama
+% \end{simbolos}
 % ---
 
 % ---
