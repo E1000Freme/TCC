@@ -3,27 +3,31 @@
 Durante as três primeiras fases, o jogador é apresentado a um dos personagens em seu ambiente natural, este é o momento para que se aprenda as diversas habilidades dos diferentes personagens.
 
 As habilidade serão apresentadas ao jogador gradualmente, sem que o mesmo fique sobrecarregado de informações, ao mesmo passo que a dificuldade de inimigos também aumentará, objetivando manter o \textit{flow} do jogo.
+\begin{citacao}
+Segundo Myhaly inserir a definição de flow! \cite[74]{mihalyi2009}
+\end{citacao}
 
 Ao final das duas primeiras fases, o jogador iniciara uma nova fase com um novo personagem, já no  final da terceira, ele será levado também a uma nova fase, porém agora ele deverá controlar os três personagens de maneira cooperativa, para que unindo suas habilidades únicas progrida no jogo.
 
 
-
-
 \section{Progressão do Jogo}
 
+Não sei o que escrever aqui.
 TODO: Descreva como o jogo evolui e o que o jogador precisa fazer para progredir no jogo.
 
 \section{Estrutura de Missões/Desafios}
 
+Nem Aqui
 TODO: Descreva os desafios micros e macros dentro de cada fase do jogo.
 
 \section{Objetivos}
 
-Nas três primeiras fases, os personagens tem por objetivo, achar aquilo que lhes foi roubado, através de dicas que lhes serão dadas pelo caminho.
+Segundo Jeremy Gibson, em seu livro \textit{"Introduction to Game Design, Prototyping and Development"}, por mais que todo jogo contenha um objetivo simples, finalizar e/ou ganhar o jogo, o jogador está a todo momento analisando diversos objetivos durante o processo. Gibson ainda divide esses objetivos em curto, médio e longo prazo. \cite{gibson2014}
 
-Na ultima fase, devem sobreviver e utilizar habilidade me conjunto para parar o antagonista, e assim recuperar o que lhes foi tomado.
+Em Ogof e o Templo das Joias os objetivos de curto prazo é sobreviver aos diferentes combates e desafios para avançar no jogo, como objetivo de médio prazo o jogador não quer perder o rastro deixado pelo antagonista, e assim achar quem lhe foi tirado, por fim o objetivo de longo prazo é impedir que Ogof cumpra o ritual.
 
 \section{Mecânicas}
+REESCREVER
 
 TODO: Descreva as regas do jogo (implícitas e explícitas) e como as partes (personagens do jogo) interagem entre si.
 
@@ -48,9 +52,9 @@ Quando uma maçã é coletada ela pode ficar guardada para um momento de conveni
 \section{Movimentação / Física}
 A movimentação dentro do jogo se dará utilizando as teclas W, A, S, e D do teclado, por ser um padrão já conhecido e utilizado em muitos jogos.
 
-Com o mouse, o \textit{player} conseguirá rotacionar a camera do jogo, para ter uma melhor visibilidade do cenário, e assim maiores chances de resolver os desafios.
+Com o mouse, o jogador conseguirá rotacionar a câmera do jogo, para ter uma melhor visibilidade do cenário, e assim maiores chances de resolver os desafios.
 
-Será utilizado o motor de física fornecido pela própria Unity3D,
+Será utilizado o motor de física fornecido pela própria Unity3D.
 
 Para maiores detalhes consulte a sessão 5.2 - Sistema de Controle deste documento.
 
@@ -59,21 +63,14 @@ Para maiores detalhes consulte a sessão 5.2 - Sistema de Controle deste documen
 TODO:
 
 \section{Ações}
-
-Descreva como o jogador interage de forma geral (controles, botões, objetos) com o mundo do jogo.
-
-\subsection{Xamã}
-\begin{itemize}
-\item Caça usando arco e flecha, um instrumento mais avançado em relação à rudimentar lança
-\item Construção de moradias em cavernas, pés e paredes de desfiladeiros
-\item Construção de Kivas, uma sala ampla dentro das cavernas, utilizada principalmente para discussões de teor político e rituais religiosos, mas que também vinha a servir como ponto de encontro; transmissão oral de conhecimentos, sem que muito registro histórico escrito tenha sido deixado para maiores referencias;
-\item Substituição da caça por plantações agrícolas, possibilitando a alimentação de mais aldeões.
-\item Habilidade para criar equipamentos de caça e sobrevivência
-\end{itemize}
+O jogador poderá movimentar-se livremente pelo cenário, bem como atacar, pular, interagir, coletar e utilizar habilidades específicas de cada um dos personagens. Para maiores detalhes do uso de tais ações, verifique  a sessão 5.2 Sistemas de Controle.
 
 \section{Combate}
+O combate irá ganhar dificuldade de forma gradual enquanto o jogador avança pelo jogo, com diferentes criaturas de diferentes níveis de poder e tipos de ataque, corpo a corpo e a distancia por exemplo, e pontos de vida. 
 
-Descreva como o jogador interage de forma geral (controles, botões, objetos) com o mundo do jogo.
+Para manter a sensação de urgência ao jogador, e fornecer um melhor sistema de combate, utiliza-se um comportamento de inteligência artificial, que é conhecido como círculo de batalha, presente em diversos jogos como God of War, Dark Souls e outros \cite{BattleCi}.
+
+Para maiores detalhes leia a sessão 6.1 - Oponentes e IA Inimiga
 
 \section{Economia}
 
@@ -81,7 +78,9 @@ Não há economia planejada para o jogo.
 
 \section{Opções do Jogo}
 
-O jogo contará com variados níveis de dificuldades, que afetarão como a IA inimiga irá se comportar, bem como pontos de vida e ataque
+Segundo o livro, Design e Desenvolvimento de Jogos, uma das formas de se identificar jogadores é classificá-los como \textit{hardcore}, que são jogadores experientes que gostam de ser desafiados, e casuais que são jogadores que preferem jogos mais fáceis,e costumeiramente abandonam jogos que são demasiadamente desafiadores \cite{pradadesign}. 
+
+O livro ainda indica que para atingir ambos os públicos é interessante que se tenha ao menos dois níveis de dificuldades em um jogo, assim Ogof e o templo das Joias contará com variados níveis de dificuldades, que afetarão como a IA inimiga irá se comportar, bem como pontos de vida e ataque.
 
 Será possível também ativar e desativar legendas para as partes de histórias e diálogos no jogo, e por fim o jogador poderá selecionar a resolução do jogo que prefere jogar.
 

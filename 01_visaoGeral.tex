@@ -17,8 +17,6 @@ Quando observa-se a produção de entretenimento juvenil, seja em livros, series
 
 O projeto faz uso de imagem lalala, assim assim assado que, e segundo o manual de classificação do brasil, deve ser classificado como XPTO, o que condiz com o publico alvo selecionado.
 
-\vfill \pagebreak
-
 \section{\textit{Game Flow}}
 
 O Gráfico de \textit{Game flow} apresenta os possíveis caminhos de telas de um jogo, abaixo, conseguimos observar de forma simplificada, que ao iniciar o jogo, será mostrado os logos, da engine, da FATEC SCS, e por fim do grupo, assim que terminar de mostra-los, será apresentada a tela de menu, com suas opções, sendo elas, sair do jogo, visualizar os créditos, inciar um novo jogo ou ainda carregar um estado salvo. Esta ultima opção, ao terminar o carregamento ele poderá ser levado a qualquer uma das areas do jogo.
@@ -28,23 +26,33 @@ Durante o jogo, tem-se a opção de pausa-lo e voltar para a tela de menu inicia
 \begin{figure}[!htb]
     \caption{\label{fig_grafico}Fluxo de telas} \begin{center}
     \includegraphics[width=\textwidth]{imagens/Flow.png} \end{center}
-\legend{Fonte: Própria Autoria} \end{figure} Ilustração ou tabela que mostre
-todas as telas que o jogo terá e como se relacionam entre si
+\legend{Fonte: Própria Autoria} \end{figure}
 
 \section{Estilo estético}
-O jogo será desenvolvido em 3D, utilizando-se a técnica conhecida como \textit{low poly}, que consiste em manter uma baixa contagem de polígonos na modelagem do jogo, segundo Ethan Redd, não existe uma delimitação forte para o que é considerado \textit{low poly}, mas ele define de forma não pragmática um modelo que tenha uma contagem menor que oito mil polígonos, ele ainda diz que existem uma série de vantagens em utilizar-se desse estilo estético, como maior produtividade e eficiência computacional, que fazem grande diferença quando se trabalha em times enxutos.
+O jogo será desenvolvido em 3D, utilizando-se a técnica conhecida como \textit{low poly}, que consiste em manter uma baixa contagem de polígonos na modelagem do jogo, segundo Ethan Redd \footnote{Ethan Redd é Game Developer Independente, e paletrante da Game Developers Conference de 2017}, não existe uma delimitação forte para o que é considerado \textit{low poly}, mas ele define de forma não pragmática um modelo que tenha uma contagem menor que oito mil polígonos, ele ainda diz que existem uma série de vantagens em utilizar-se desse estilo estético, como maior produtividade e eficiência computacional, que fazem grande diferença quando se trabalha em times enxutos.
+
+\begin{figure}[htb]
+    \caption{\label{fig_lowpoly}Low Poly}
+    \begin{center}
+        \includegraphics[width=\textwidth]{imagens/lowPoly.jpg}
+    \end{center}
+    \legend{Fonte: Visite Noruega}
+\end{figure}
 
 Dito isso, cada uma das fases do jogo pretende retratar de forma aproximada os ambientes de origem dos personagens, dessa forma a paleta de cores e e objetos encontrados em cada parte do jogo fará alusão a isso.
 
-O mundo do Duende, ou Fulkominn, que quer dizer perfeição em islandês (https://glosbe.com/is/en/fullkominn), foi baseada na vila de Geiranger da Noruega, que é uma pequena vila incrustada em um fiorde, com uma floresta a abraçando.
+O mundo do Duende, ou Fulkominn, que quer dizer perfeição em islandês \footnote{Segundo o site https://uwdc.library.wisc.edu/collections/IcelOnline/}, foi baseada na vila de Geiranger da Noruega, que é uma pequena vila incrustada em um fiorde, com uma floresta a abraçando.
+
+\clearpage
 
 \begin{figure}[htb]
     \caption{\label{fig_mundoDuende}Geiranger - Noruega}
     \begin{center}
-        \includegraphics[width=\textwidth/2]{imagens/geiranger.jpeg}
+        \includegraphics[width=\textwidth]{imagens/geiranger.jpeg}
     \end{center}
     \legend{Fonte: Visite Noruega}
 \end{figure}
+
 
 
 O mundo da bruxa, foi baseado na cidade de Kilin no Reino Unido, um pequeno vilarejo que se ergue em uma planície escocesa,e desemboca em um lago.
@@ -52,32 +60,36 @@ O mundo da bruxa, foi baseado na cidade de Kilin no Reino Unido, um pequeno vila
 \begin{figure}[htb]
     \caption{\label{fig_mundoBruxa}Kilin - Reino Unido}
     \begin{center}
-        \includegraphics[width=\textwidth/2]{imagens/kilin.jpg}
+        \includegraphics[width=0.9\textwidth]{imagens/kilin.jpg}
     \end{center}
     \legend{Fonte: Visite Noruega}
 \end{figure}
 
-O mundo do xamã foi inspirado pelos lugares em que os Pueblos ou Anasazi, viviam, tendo maior inspiração no parque nacional de mesa verde nos estados unidos.
-
 \clearpage
 
+O mundo do xamã foi inspirado pelos lugares em que os Pueblos ou Anasazi, viviam, tendo maior inspiração no parque nacional de mesa verde nos estados unidos.
+
+
 \begin{figure}[htb]
-    \caption{\label{fig_mundoXaman}Kilin - Reino Unido}
+    \caption{\label{fig_mundoXaman}Mesa Verde - Estados Unidos}
     \begin{center}
-        \includegraphics[width=\textwidth/2]{imagens/mesaverde.jpg}
+        \includegraphics[width=\textwidth]{imagens/mesaverde.jpg}
     \end{center}
     \legend{Fonte: Visite Noruega}
 \end{figure}
 
 E por fim, a fase em que todos os elemento se unem, foi baseada no parque nacional de Tikal na Guatemala, antiga formação de um templo Maia.
 
+\clearpage
+
 \begin{figure}[htb]
-    \caption{\label{fig_mundoXaman}Kilin - Reino Unido}
+    \caption{\label{fig_mundoHub}Tikal - Guatemala}
     \begin{center}
-        \includegraphics[width=\textwidth/2]{imagens/tikal.jpg}
+        \includegraphics[width=\textwidth]{imagens/tikal.jpg}
     \end{center}
     \legend{Fonte: Visite Noruega}
 \end{figure}
+
 
 \section{Inspirações}
 
@@ -91,6 +103,8 @@ misteriosamente transportada através do tempo para o ano de 1743.
 \includegraphics[width=0.3\textwidth]{imagens/outlander.jpg} \end{center}
 \legend{Fonte: (Diana Gabaldon, 1991)} \end{figure}
 
+\clearpage
+
 \subsection{Filha de Feiticeira}
 
 Este romance de Celia Rees narra, em forma de diário, a história de Mary
@@ -98,12 +112,10 @@ Nuttall, uma adolescente inglesa do século XVII que se vê obrigada a fugir par
 a América para não ter o mesmo destino de sua avó, condenada à forca sob
 acusação de feitiçaria.
 
-\clearpage
-
 \begin{figure}[!htb] \caption{\label{filha_feiticeira}Filha de Feiticeira}
     \begin{center}
     \includegraphics[width=0.3\textwidth]{imagens/feiticeira.jpeg} \end{center}
-\legend{Fonte: (Celia Rees, 2002)} \end{figure}
+\legend{Fonte: Celia Rees, 2002} \end{figure}
 
 
 
@@ -116,7 +128,7 @@ alcoolismo, brigas de bar e descobertas inusitadas.
 
 
 \begin{figure}[!htb] \caption{\label{Desencanto}Desencanto} \begin{center}
-\includegraphics[width=\textwidth/2]{imagens/Desencanto.jpg} \end{center}
+\includegraphics[width=0.5\textwidth]{imagens/Desencanto.jpg} \end{center}
 \legend{Fonte: \cite{dessencanto}} \end{figure}
 
 \subsection{Os Vingadores - Guerra infinita}
@@ -133,11 +145,13 @@ as joias do infinito para prosseguir com seu plano.
 Franquia centrada no personagem Kratos, que foi enganado pelos Deuses e busca
 vingança por isso.
 
+
+\clearpage
+
 \begin{figure}[!htb] \caption{\label{god_of_war}God of War} \begin{center}
 \includegraphics[width=0.3\textwidth]{imagens/GodofWar.jpg} \end{center}
 \legend{Fonte: \cite{godofwar}} \end{figure}
 
-\clearpage
 
 \subsection{Brownies}
 
@@ -163,7 +177,6 @@ um ritual de homenagem, o alux protegerá a plantação do fazendeiro de
 animais famintos. [\ldots] O alux invoca fortes ventos, emite agudos sons
 sibilantes, e lança pedras em instrusos: tradução livre]
 
-\clearpage
 
 \begin{figure}[!htb] \caption{\label{fig_alux}Alux} \begin{center}
 \includegraphics[width=0.3\textwidth]{imagens/alux.jpg} \end{center}
@@ -179,12 +192,12 @@ Zuni, Navajo e Hopi, e que essas tribos ainda pratiquem seus rituais. Pela
 região que habitam, grande parte de seus ritos ocorriam para os deuses da
 chuva\cite{abreu94}.
 
+\clearpage
+
 \begin{figure}[!htb] \caption{\label{fig_puebloan}Construção Pueblo} \begin{center}
-\includegraphics[width=0.3\textwidth]{imagens/puebloans.png} \end{center}
+\includegraphics[width=0.5\textwidth]{imagens/puebloans.png} \end{center}
 \legend{Fonte:~\cite{heyder1997anasazi}} \end{figure}
 
-
-\vfill \pagebreak
 
 \subsection{Siempre Bruja}
 
@@ -217,6 +230,13 @@ Em Moss, você ajuda o pequeno roedor Quill, a passar por muitos desafios para s
 \subsection{\textit{Zelda: Windwaker}}
 
 \section{Equipe de Desenvolvimento}
+
+\subsection{Logo}
+
+\subsection{Slogan}
+
+\subsection{Divisão de tarefas}
+
 A equipe dividiu-se de forma a
 otimizar as forças de cada um dos integrantes, desta forma ficamos com a
 seguinte divisão de tarefas não rígidas:
