@@ -12,6 +12,7 @@
 \usepackage{graphicx}
 \usepackage{microtype}
 \usepackage{tabularx}
+\usepackage{titlecaps}
 % \usepackage{float}
 
 % \usepackage[brazilian, hyperpageref]{backref}
@@ -30,22 +31,42 @@
 % 		Citado #1 vezes nas páginas #2.%
 % 	\fi}%
 
-\newcommand{\citeauthoryear}[1]{\citeauthor{#1}, \citeyear{#1}}
 
-\title{Ogof e o templo das joias}
-\author{ Eric Santos\\ Marina Araujo \\Pedro Freme}
+\newcommand{\citeauthoryear}[1]{\citeauthor{#1} , \citeyear{#1}}
+
+\titulo{Ogof e o templo das joias}
+\autor{ Eric Santos\\ Marina Araujo \\Pedro Freme}
 \local{São Caetano do Sul}
 \data{2019}
-\orientador{Teste \and Teste}
+%\orientador{Teste \and Teste}
 \instituicao{%
     FATEC São Caetano do Sul
     \par
-    Tecnológico em Jogos Digitais
+    Tecnologia em Jogos Digitais
 }
+\preambulo{Trabalho de conclusão de curso submetido como requisito parcial para a conclusão do Curso Superior de Tecnologia em Jogos Digitais da Faculdade de Tecnologia de São Caetano do Sul - Antônio Russo orientados pelos Professores  Prof. Me. Miguel Marílio Saad Junior, Prof\textsuperscript{a} Dra. Raquel Silva e Me. Leide}
 
-\tipotrabalho{TCC}
+%\tipotrabalho{monografia}
 
-% \preambulo{Colocar o preambulo aqui}
+% \titulo{Modelo Canônico de\\ Trabalho Acadêmico com \abnTeX}
+% \autor{Equipe \abnTeX}
+% \local{Brasil}
+% \data{2014, v-1.9.2}
+% \orientador{Lauro César Araujo}
+% \coorientador{Equipe \abnTeX}
+% \instituicao{%
+%   Universidade do Brasil -- UBr
+%   \par
+%   Faculdade de Arquitetura da Informação
+%   \par
+%   Programa de Pós-Graduação}
+% \tipotrabalho{Tese (Doutorado)}
+% % O preambulo deve conter o tipo do trabalho, o objetivo, 
+% % o nome da instituição e a área de concentração 
+% \preambulo{Modelo canônico de trabalho monográfico acadêmico em conformidade com
+% as normas ABNT apresentado à comunidade de usuários \LaTeX.}
+% ---
+
 
 \makeatletter
 \hypersetup{
@@ -106,7 +127,11 @@
 % Retira espaço extra obsoleto entre as frases.
 \frenchspacing
 
+\pretextual
+
 \imprimircapa
+
+\imprimirfolhaderosto
 
 
 % \begin{dedicatoria}
